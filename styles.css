@@ -12,7 +12,6 @@ main{
     margin: 20px;
     padding: 50px 100px;
     background-color: rgba(246,249,254);
-/* Delete after everything is done */
 }
 
 /* NAVBAR */
@@ -46,6 +45,7 @@ main{
 .main-section{
     display: flex;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .left{
@@ -104,3 +104,16 @@ main{
     width: 300px;
 }
 
+/* FOOTER */
+
+footer h3{
+    color: rgb(81,81,81);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footlinks img{
+    width: 35px;
+    margin-right: 10px;
+}
