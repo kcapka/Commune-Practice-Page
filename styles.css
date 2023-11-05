@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 main{
     margin: 20px;
+    padding: 50px;
     background-color: rgba(246,249,254);
     height: 100vh; /* Delete after everything is done */
 }
@@ -19,4 +24,19 @@ main{
 
 .navbar ul{
     display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(81,81,81);
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+#button{
+    background-color: rgb(54,41,97);
+    color: white;
+    padding: 13px;
+    border-radius: 5px;
 }
