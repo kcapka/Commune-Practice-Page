@@ -5,14 +5,14 @@
 }
 
 body{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 main{
     margin: 20px;
-    padding: 50px;
+    padding: 50px 100px;
     background-color: rgba(246,249,254);
-    height: 100vh; /* Delete after everything is done */
+/* Delete after everything is done */
 }
 
 /* NAVBAR */
@@ -40,3 +40,67 @@ main{
     padding: 13px;
     border-radius: 5px;
 }
+
+/* MAIN SECTION */
+
+.main-section{
+    display: flex;
+    margin-top: 100px;
+}
+
+.left{
+    margin-right: 75px;
+}
+
+.left .learnmore{
+    background-color: rgb(54,41,97);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.left .learnmore p{
+    color: rgb(200,190,225);
+}
+
+.left .learnmore a{
+    font-weight: bold;
+    color: rgb(200,190,225);
+}
+
+.left h1{
+    color: rgb(53,51,81);
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left p{
+    color: rgb(81,81,81);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.email-signup form input{
+    padding: 15px 100px 15px 20px;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.email-signup form label{
+    background-color: rgb(54,41,97);
+    color: white;
+    padding: 13px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+.main-section .right img{
+    width: 300px;
+}
+
