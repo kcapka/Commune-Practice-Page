@@ -19,14 +19,15 @@ main{
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.navbar ul{
+.navbar .navlinks ul{
     display: flex;
     list-style: none;
 }
 
-.navbar ul li a{
+.navbar .navlinks ul li a{
     text-decoration: none;
     color: rgb(81,81,81);
     margin-left: 20px;
@@ -34,7 +35,7 @@ main{
     transition: 0.5s;
 }
 
-.navbar ul li a:hover{
+.navbar .navlinks ul li a:hover{
     color: rgb(200, 200, 200);
 }
 
@@ -132,4 +133,105 @@ footer h3{
 .footlinks img{
     width: 35px;
     margin-right: 10px;
+}
+
+/* MOBILE */
+
+.navbar i{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+
+    main{
+        margin: 15px;
+        padding: 50px 30px;
+    }
+
+    /* NAV */
+
+    .navbar i{
+        display: block;
+        font-size: 30px;
+    }
+
+    .navlinks i{
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .navlinks ul{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .navlinks ul li{
+        margin-bottom: 30px;
+    }
+
+    .navbar .navlinks ul li a{
+        font-size: 20px;
+        color: white;
+    }
+
+    .navlinks{
+        display: none;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        position: absolute;
+        transition: 1s;
+        background: rgb(110, 86, 188);
+    }
+
+    /* main body */
+
+    .main-section{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .left{
+        margin-right: 0;
+    }
+
+    .left h1{
+        font-size: 40px;
+    }
+
+    .email-signup form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-signup form input{
+        padding: 15px 100px 15px 20px;
+        margin-bottom: 30px;
+    }
+    
+    .email-signup form label{
+        margin-left: 0px;
+
+    }
+
+    .right{
+        display: none;
+    }
+
+    /* FOOTER */
+
+    footer h3{
+        font-size: 20px;
+    }
+    
+    .footlinks img{
+        width: 50px;
+    }
 }

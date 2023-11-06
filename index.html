@@ -7,19 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85166095db.js" crossorigin="anonymous"></script>
     <title>Commune</title>
 </head>
 <body>
     <main>
         <nav class="navbar">
             <img src="./Assets/Logo.svg" alt="Communte Logo">
-            <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Affiliates</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Communities</a></li>
-                <li><a href="#" id="button">Join Waitlist</a></li>
-            </ul>
+            <i class="fa-solid fa-bars" style="color: #000000;" onclick="showmenu()"></i>
+            <div class="navlinks" id="navlinks">
+                <i class="fa-solid fa-x" style="color: #FFF;" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Communities</a></li>
+                    <li><a href="#" id="button">Join Waitlist</a></li>
+                </ul>
+            </div>
         </nav>
 
         <section class="main-section">
@@ -56,5 +61,21 @@
         
 
     </main>
+
+    <!--JS FOR TOGGLE MENU-->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right="0";
+            navlinks.style.display='block';
+        }
+        function hidemenu(){
+            navlinks.style.right="-250px";
+            navlinks.style.display='none';
+        }
+        
+    </script>
+
 </body>
 </html>
