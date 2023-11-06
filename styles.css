@@ -11,6 +11,7 @@ body{
 main{
     margin: 20px;
     padding: 50px 100px;
+    border-radius: 10px;
     background-color: rgba(246,249,254);
 }
 
