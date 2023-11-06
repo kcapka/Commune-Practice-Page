@@ -23,6 +23,10 @@ main{
     align-items: center;
 }
 
+.navlinks{
+    display: block;
+}
+
 .navbar .navlinks ul{
     display: flex;
     list-style: none;
